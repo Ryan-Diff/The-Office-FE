@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterItem component renders a single character 1`] = `
+<DocumentFragment>
+  <figure>
+    <img
+      alt="Dwight Schrute"
+      src="https://upload.wikimedia.org/wikipedia/en/c/cd/Dwight_Schrute.jpg"
+    />
+    <figcaption>
+      Dwight Schrute
+    </figcaption>
+  </figure>
+</DocumentFragment>
+`;
