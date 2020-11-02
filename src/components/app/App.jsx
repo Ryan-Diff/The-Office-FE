@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreateCharacter } from '../../container/CreateCharacter';
+import { CreateCharacter } from '../form/CreateCharacter';
  
 export default function App() {
   return < CreateCharacter />;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import CharacterForm from '../components/controls/Character-Form';
-import { postCharacter } from '../services/office-api';
+import CharacterForm from '../controls/Character-Form';
+import { postCharacter } from '../../services/office-api';
 
 export const CreateCharacter = () => {
     const [name, setName] = useState('');

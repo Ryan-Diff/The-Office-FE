@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import { postCharacter } from '../services/office-api';
+import { getCharacterById, getCharacters } from '../services/office-api';
 
-export const usePostCharacter = () => {
+export const useGetCharacters = () => {
     const [loading, setLoading] = useState(true);
     const [characters, setCharacters] = useState([]);
 
     useEffect(() => {
-        postCharacter()
+        getCharacters()
             .then(fetchedCharacters => setCharacters(fetchedCharacters))
             .finally(() => setLoading(false));
     }, []);
@@ -14,5 +14,21 @@ export const usePostCharacter = () => {
     return {
         loading,
         characters
+    };
+};
+
+export const useGetCharacterById = (id) => {
+    const [loading, setLoading] = useState(true);
+    const [character, setCharacter] = useState([]);
+
+    useEffect(() => {
+        getCharacterById(id)
+            .then(fetchedCharacter => setCharacter(fetchedCharacter))
+            .finally(() => setLoading(false));
+    }, []);
+
+    return {
+        loading,
+        character
     };
 };

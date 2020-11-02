@@ -1,16 +1,21 @@
-const fetch = require('node-fetch');
 const URL = process.env.API_KEY;
 
-export const postCharacter = async(character) => {
-    const res =await fetch(`${URL}/api/v1/characters`, {
-        method: 'POST',
-        body: JSON.stringify(character),
-        headers: { 'Content-type': 'application/json; charset=UTF-8' }
-    })
+export const postCharacter = character => {
+  return fetch(`${URL}/api/v1/characters`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(character),
+  })
+    .then(res => res.json());
+};
 
-    if (!res.ok) throw ('Failed')
+export const getCharacters = () => {
+  return fetch(`${URL}/api/v1/characters`)
+    .then(res => res.json())
+};
 
-    const apiRes = res.json()
+export const getCharacterById = id => {
 
-    return apiRes
-}
+  return fetch(`${URL}/api/v1/characters/${id}`)
+    .then(res => res.json())
+};
