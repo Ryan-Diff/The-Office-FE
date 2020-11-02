@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders App 1`] = `
+exports[`Character form component renders CharacterForm 1`] = `
 <DocumentFragment>
   <div>
     <form
@@ -15,7 +15,7 @@ exports[`App component renders App 1`] = `
         id="name"
         name="name"
         type="text"
-        value=""
+        value="Dwight"
       />
       <label
         for="position"
@@ -26,7 +26,7 @@ exports[`App component renders App 1`] = `
         id="position"
         name="position"
         type="text"
-        value=""
+        value="Assistant to the Regional Manager"
       />
       <label
         for="quote"
@@ -37,7 +37,7 @@ exports[`App component renders App 1`] = `
         id="quote"
         name="quote"
         type="text"
-        value=""
+        value="Identity theft is not a joke Jim!"
       />
       <label
         for="imageUrl"
@@ -48,7 +48,7 @@ exports[`App component renders App 1`] = `
         id="imageUrl"
         name="imageUrl"
         type="text"
-        value=""
+        value="https://upload.wikimedia.org/wikipedia/en/c/cd/Dwight_Schrute.jpg"
       />
       <label
         for="favoriteDessert"
@@ -59,7 +59,7 @@ exports[`App component renders App 1`] = `
         id="favoriteDessert"
         name="favoriteDessert"
         type="text"
-        value=""
+        value="Can of Pickled Beets from his survivor shelter"
       />
       <button
         data-testid="formButton"
